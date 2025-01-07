@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Import external fonts -->
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/horror');
+        @import url('https://fonts cddnfonts.com/css/Kreeture');
+    </style>
+    
+    <!-- Title, external font resources, and CSS -->
+    <title>Scoreboard Page</title>
+    <link href="https://fonts.cdnfonts.com/css/horror" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/Kreeture" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css"> <!-- Link to CSS -->
+
+    <!-- Link to JavaScript scoreboard -->
+    <script src="JS/scoreboard.js"></script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="zombie-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="demo.html">Game Demo</a></li>
+            <li><a href="scoreboard.html">Scoreboard</a></li>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="signup.html">Register</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main content wrapper -->
+    <div class="zombie-wrapper">
+        <!-- Header section -->
+        <header class="zombie-header">
+            <h1><b>Zombie Invasion</b></h1>
+            <h3>Leaderboard🏆</h3>
+        </header>
+       
+        <!-- Content section -->
+        <div class="zombie-content">
+            <div class="ranking-table">
+                <table id="scoreTable"> <!-- Assign an ID to the table -->
+                    <thead>
+                        <tr>
+                            <th>Ranking</th>
+                            <th>Player</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- populate the table dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Footer section -->
+    <footer class="zombie-footer">
+        <p>🧟‍♀️Designed by Arusha Ramessur🧟‍♀️</p>
+        <p>© 2023 Zombie Invasion - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

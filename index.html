@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Import fonts for the page -->
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/horror');
+        @import url('https://fonts.cdnfonts.com/css/Kreeture');
+    </style>
+    
+    <title>Home Page</title>
+    
+    <!-- Link external stylesheets for fonts and CSS -->
+    <link href="https://fonts.cdnfonts.com/css/horror" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/Kreeture" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css"> <!-- Link to CSS -->
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="zombie-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="demo.html">Game Demo</a></li>
+            <li><a href="scoreboard.html">Scoreboard</a></li>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="signup.html">Register</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main content wrapper -->
+    <div class="zombie-wrapper">
+        <!-- Header section -->
+        <header class="zombie-header">
+            <h1><b>Zombie Invasion</b></h1>
+            <h3>Halloween Edition 🎃</h3>
+        </header>
+
+        <!-- Content section -->
+        <div class="zombie-content">
+            <p>Zombie Invasion is an adrenaline-pumping game that will test your shooting skills and reflexes.</p>
+            <h2>Sneak a peak at the game preview !</h2>
+            
+            <!-- Slider container for image preview -->
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slides">
+                        <!-- Slide 1 -->
+                        <div id="slides__1" class="slide">
+                            <img src="Assets/Image1.png" alt="Image 1">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div id="slides__2" class="slide">
+                            <img src="Assets/Image2.png" alt="Image 2">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div id="slides__3" class="slide">
+                            <img src="Assets/Image3.png" alt="Image 3">
+                        </div>
+                    </div>
+                    
+                    <!-- Slider navigation links -->
+                    <div class="slider__nav">
+                        <a class="slider__navlink" href="#slides__1"></a>
+                        <a class="slider__navlink" href="#slides__2"></a>
+                        <a class="slider__navlink" href="#slides__3"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Play button -->
+            <a href="login.html" class="play-button">Play Now 🧟</a>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="zombie-footer">
+        <p>🧟‍♀️Designed by Arusha Ramessur🧟‍♀️</p>
+        <p>© 2023 Zombie Invasion - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

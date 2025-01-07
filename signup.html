@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Import external fonts -->
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/horror');
+        @import url('https://fonts.cdnfonts.com/css/Kreeture');
+    </style>
+    
+    <!-- Title, external font resources, and CSS -->
+    <title>Sign-Up page</title>
+    <link href="https://fonts.cdnfonts.com/css/horror" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/Kreeture" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css"> <!-- Link to CSS -->
+
+     <!-- Link to JavaScript form validation -->
+     <script src="JS/validation.js"></script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="zombie-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="demo.html">Game Demo</a></li>
+            <li><a href="scoreboard.html">Scoreboard</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content wrapper -->
+    <div class="zombie-wrapper">
+        <!-- Header section -->
+        <header class="zombie-header">
+            <h1><b>Zombie Invasion</b></h1>
+            <h5><b>Join The Zombie Community 🧟</b></h5>
+        </header>
+
+        <!-- Content section -->
+        <div class="zombie-content">
+            <div class="signup-container">
+                <h2 class="signup-header">👻 Create an Account</h2>
+                <form class="signup-form" onsubmit="return validateSignUpForm()" name="register">
+                    <!-- Name input -->
+                    <div class="input-control">
+                        <label for="name">Name:</label>
+                        <input type="text" id="userName" name="name" placeholder="Choose a spooky name" required>
+                        <div id="emailError" class="error"></div>
+                    </div>
+                    <!-- Email input -->
+                    <div class="input-control">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your eerie email" required >
+                        <div id="emailError" class="error"></div>
+                    </div>
+                    <!-- Password input -->
+                    <div class="input-control">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Create a creepy password" required>
+                        <div id="passwordError" class="error"></div>
+                    </div>
+                    <!-- Confirm Password input -->
+                    <div class="input-control">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your creepy password" required>
+                        <div id="confirmPasswordError" class="error"></div>
+                    </div>
+                    <!-- Date of Birth input -->
+                    <div class="input-control">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                        <div id="dobError" class="error"></div>
+                    </div>
+                    <!-- Phone Number input -->
+                    <div class="input-control">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your cursed phone number" required>
+                        <div id="phoneError" class="error"></div>
+                    </div>
+                    <!-- Sign-Up button -->
+                    <button class="submit-button" type="submit">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="login.html">Log in</a></p>
+            </div>
+        </div>
+    </div>
+   <!-- Footer section -->
+    <footer class="zombie-footer">
+        <p>🧟‍♀️Designed by Arusha Ramessur🧟‍♀️</p>
+        <p>© 2023 Zombie Invasion - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+

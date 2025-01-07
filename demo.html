@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import fonts for the page -->
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/horror');
+        @import url('https://fonts.cdnfonts.com/css/Kreeture');
+    </style>
+    <!-- Link external stylesheets for fonts and CSS -->
+    <link href="https://fonts.cdnfonts.com/css/horror" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/Kreeture" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css"> <!-- Link CSS file -->
+    <title>Zombie Invasion Demo</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="zombie-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="demo.html">Game Demo</a></li>
+            <li><a href="scoreboard.html">Scoreboard</a></li>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="signup.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content wrapper -->
+    <div class="zombie-wrapper">
+        <!-- Header section -->
+        <header class="zombie-header">
+            <h1><b>Zombie Invasion</b></h1>
+        </header>
+        
+        <!-- Canvas for the game -->
+        <canvas id="canvas" width="1500" height="650"></canvas>
+        <script src="JS/demo.js"></script> <!-- Link to game file -->
+        
+        
+        <!-- Game details and information -->
+        <div class="zombie-content">
+            <div class="game-details">
+                <h2>About the Game:</h2>
+                <p>Zombie Invasion is an intense and thrilling shooting game that pits players against hordes of relentless zombies.</p>
+                <p>The game takes place in a post-apocalyptic world where you are the last line of defense against the undead.</p>
+                <p>Your mission is to survive for as long as possible and rack up the highest score by taking down wave after wave of approaching zombies.</p>
+
+                <h2>Objectives:</h2>
+                <p>The primary objective of Zombie Invasion is to score as many points as possible while fending off the relentless zombie onslaught.</p>
+                <p>Players need to use their shooting skills and quick reflexes to eliminate zombies before they get too close.</p>
+                <p>As you progress in the game, the challenge intensifies as the number of zombies increases and appears faster, requiring you to stay sharp and focused.</p>
+
+                <h2>How to Play:</h2>
+                <P>Use the your mouse to move the shooter across the grid, allowing you to aim at the approaching zombies.</p>
+                <P>Press the space bar to fire your weapon. Aim carefully and time your shots to take down as many zombies as possible.</p>
+                    <table>
+                        <tr>
+                          <th>Zombie Type</th>
+                          <th>Behavior</th>
+                          <th>Damage to Player</th>
+                          <th>Points if Killed</th>
+                          <th>Difficulty to Kill</th>
+                        </tr>
+                        <tr>
+                          <td>Newly Infected</td>
+                          <td>Walks normally, low damage, easy to kill</td>
+                          <td>-1 Life</td>
+                          <td>10</td>
+                          <td>Low</td>
+                        </tr>
+                        <tr>
+                          <td>Speedy</td>
+                          <td>Moves quickly, low damage, fast but erratic</td>
+                          <td>-1 Life</td>
+                          <td>20</td>
+                          <td>Low</td>
+                        </tr>
+                        <tr>
+                          <td>Spider</td>
+                          <td>Crawls slowly, high damage, tough to kill</td>
+                          <td>Instant death</td>
+                          <td>50</td>
+                          <td>High</td>
+                        </tr>
+                      </table>
+
+                <h2>Gameplay Tips:</h2>
+                <p>Keep moving: Constantly adjust your gun's position to target zombies in different columns and avoid getting overwhelmed.</p>
+                <p>Stay alert: As the game progresses, the pace increases, and more zombies appear rapidly. Stay focused and react quickly to survive.</p>
+                <p>Game Over: The game ends if player does not have any life left.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="zombie-footer">
+        <p>🧟‍♀️Designed by Arusha Ramessur🧟‍♀️</p>
+        <p>© 2023 Zombie Invasion - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

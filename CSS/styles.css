@@ -1,0 +1,289 @@
+
+/* Style for the body element */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../Assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Horror', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-attachment: fixed; /* Make the background image fixed */
+}
+
+/* Style for the main content */
+.zombie-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: auto; /* Enable scrolling for the content */
+    padding: 20px; /* Add padding to create space around the content */
+}
+
+/* Style for the navigation bar */
+.zombie-nav {
+    background-color: rgb(0, 0, 0); /* Transparent black background with filter */
+    padding: 10px 0;
+}
+
+.zombie-nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.zombie-nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.zombie-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.zombie-nav a:hover {
+    color: #ff5722; /* Orange color on hover */
+}
+
+/* Style for the header */
+.zombie-header {
+    text-align: center;
+    color: hsl(107, 100%, 57%); /* Green */
+    padding: 20px;
+    font-size: 36px;
+}
+
+/* Style for the canvas in the game page */
+#canvas {
+    background-image: url('../Assets/bg.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Style for the main content in the home page */
+.zombie-content {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px; /* Larger font size */
+    font-family: 'Kreeture', sans-serif;
+}
+
+/* Style for the play button */
+.play-button {
+    display: inline-block;
+    background-color: #ff5722; /* Halloween-themed orange color */
+    color: #fff;
+    padding: 20px 40px; /* Larger button */
+    text-decoration: none;
+    font-size: 24px; /* Larger font size */
+    font-family: 'Horror', sans-serif;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: hsl(107, 100%, 57%); /* Green on hover */
+}
+
+/* Style for the image sliders */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.slider {
+    width: 100%;
+    max-width: 800px; /* Adjusted maximum width */
+    height: 50%; /* Adjusted height */
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%; /* Adjusted height to fill the container */
+    box-sizing: border-box;
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 100%; /* Ensure the image fills the slide */
+}
+
+.slider__nav {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.slider__navlink {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #ff5722; /* Halloween-themed orange color */
+    margin: 0 10px 0 10px;
+}
+
+.slider__navlink:hover {
+    background-color: hsl(107, 100%, 57%); /* Green on hover */
+}
+
+/* Style for the footer */
+.zombie-footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.377); /* Transparent black background with filter */
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Style for the signup and login page */
+.signup-container {
+    background-color: #050505a1; /* Orange background */
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    margin: 0 auto;
+}
+
+.signup-header {
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+}
+
+.signup-form {
+    text-align: left;
+}
+
+.input-control {
+    margin-bottom: 15px;
+}
+
+.input-control label {
+    display: block;
+    color: #ff8800;
+}
+
+.input-control input {
+    width: 93%;
+    padding: 10px;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #2aeb19; /* Green border for success */
+    border-width: 3.5px; 
+}
+
+.input-control.error input {
+    border-color: #f40707; /* Red border for error */
+    border-width: 3.5px; 
+}
+
+.error {
+    color: #f40707; /* Red error text */
+}
+
+/* Style for the submit button */
+.submit-button {
+    background-color: #ff5722; /* Darker orange for the button */
+    color: #fff;
+    border: none;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-family: 'Horror', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: hsl(107, 100%, 57%); /* Green on hover */
+}
+
+/* Style for the scoreboard table */
+/* Style the entire table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.3); /* Transparent black overlay */
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.5); /* Green box shadow */
+}
+
+/* Style the table header */
+th {
+    background-color: #008000; /* Green header background */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #006400; /* Dark green border for the header */
+}
+
+/* Style table rows */
+tr {
+    border: 1px solid #006400; /* Dark green border for rows */
+}
+
+/* Style table cells */
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* Hover effect class for first place*/
+.gold-hover:hover {
+    background-color:#ffd500; /* Gold hover color */
+}
+
+/* Hover effect class for second place*/
+.silver-hover:hover {
+    background-color: #C0C0C0; /* Silver hover color */
+}
+
+/* Hover effect class for third place*/
+.bronze-hover:hover {
+    background-color: #CD7F32; /* Bronze hover color */
+}
+
+/* Hover effect class for normal rows*/
+.normal-hover:hover {
+    background-color: #ed3800; /* Orange background on hover */
+}
